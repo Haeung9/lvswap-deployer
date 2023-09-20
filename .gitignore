@@ -1,0 +1,7 @@
+build/
+LVswap-core/
+LVswap-periphery/
+node_modules
+.env
+*.log
+ganache_instances_list.txt

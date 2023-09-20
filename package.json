@@ -1,0 +1,26 @@
+{
+  "name": "lvswap-deployer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "dotenv": "^16.3.1",
+    "ganache": "^7.9.1",
+    "ncp": "^2.0.0",
+    "rimraf": "^5.0.1",
+    "truffle": "^5.11.5"
+  },
+  "scripts": {
+    "clean": "rimraf ./build/",
+    "download": "git clone https://github.com/cryptoecc/LVswap-core.git && git clone https://github.com/cryptoecc/LVswap-periphery.git",
+    "corecompile": "cd LVswap-core && git checkout dev && yarn compile && cd ..",
+    "peripherycompile": "cd LVswap-periphery && git checkout dev && yarn compile && cd ..",
+    "precompile": "yarn clean && yarn corecompile && yarn peripherycompile",
+    "compile": "truffle compile",
+    "postcompile": "ncp ./LVswap-core/build/contracts build/contracts && ncp ./LVswap-periphery/build/contracts build/contracts",
+    "localdeploy": "truffle migrate --compile-none --network test_local",
+    "testdeploy": "truffle migrate --compile-none --network worldland_gwangju",
+    "deploy": "truffle migrate --compile-none --network production"
+  }
+}
