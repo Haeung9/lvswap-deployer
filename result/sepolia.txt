@@ -3,3 +3,69 @@ factory deployed:  0xd033B0b095478De5cE9CB5C754fBc98F9B1A4704
 weth deployed:  0xf1269dF4aBAc5ea8F63436491a47696cDC5c44E4
 router deployed:  0x2F34063970Cc12D45E7bd610638469c0BA4757Af
 router set:  0x2F34063970Cc12D45E7bd610638469c0BA4757Af
+
+
+Starting migrations...
+======================
+> Network name:    'sepolia'
+> Network id:      11155111
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_deploy.js
+===========
+
+   Deploying 'WETH9'
+   -----------------
+   > transaction hash:    0xe51f19ce3af1ce0d5342768b175d4f8251839dd827128bcaffbf75fb2767cee0
+   > Blocks: 0            Seconds: 9
+   > contract address:    0xf1269dF4aBAc5ea8F63436491a47696cDC5c44E4
+   > block number:        4325939
+   > block timestamp:     1695198564
+   > account:             0x2Bb024a4e7b5453D9E40A439ACf411204413A3ac
+   > balance:             4.331762778362799866
+   > gas used:            528461 (0x8104d)
+   > gas price:           2.50001063 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00132115811754043 ETH
+
+
+   Deploying 'UniswapV2Factory'
+   ----------------------------
+   > transaction hash:    0x8a8e801e919b257c8ed5a26fa1123015250e71639273b0041870d68e015280d0
+   > Blocks: 2            Seconds: 17
+   > contract address:    0xd033B0b095478De5cE9CB5C754fBc98F9B1A4704
+   > block number:        4325941
+   > block timestamp:     1695198588
+   > account:             0x2Bb024a4e7b5453D9E40A439ACf411204413A3ac
+   > balance:             4.319755419132828866
+   > gas used:            4802924 (0x49496c)
+   > gas price:           2.50001025 gwei
+   > value sent:          0 ETH
+   > total cost:          0.012007359229971 ETH
+
+
+   Deploying 'UniswapV2Router02'
+   -----------------------------
+   > transaction hash:    0x1d79ee623f89fd793c49a4763df8412facbb67dfd54140c4b7ae5dbffb2a132d
+   > Blocks: 1            Seconds: 13
+   > contract address:    0x2F34063970Cc12D45E7bd610638469c0BA4757Af
+   > block number:        4325943
+   > block timestamp:     1695198612
+   > account:             0x2Bb024a4e7b5453D9E40A439ACf411204413A3ac
+   > balance:             4.308818125309455566
+   > gas used:            4374900 (0x42c174)
+   > gas price:           2.500010017 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0109372938233733 ETH
+
+deployer address:  0x2Bb024a4e7b5453D9E40A439ACf411204413A3ac
+factory deployed:  0xd033B0b095478De5cE9CB5C754fBc98F9B1A4704
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.02426581117088473 ETH
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.02426581117088473 ETH

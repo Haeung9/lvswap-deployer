@@ -1,0 +1,73 @@
+deployer address:  0x2Bb024a4e7b5453D9E40A439ACf411204413A3ac
+factory deployed:  0x511DB00D13Cb58B07213Fc640F1Da20E0da0765C
+weth deployed:  0x4Ac3Af7621e5e244577343C0fDc94ca81eC8109E
+router deployed:  0xbB66cFAC2Fc7156F051785f3d4C1DA142A9C3b09
+router set:  0xbB66cFAC2Fc7156F051785f3d4C1DA142A9C3b09
+
+Compiling your contracts...
+===========================
+> Compilation skipped because --compile-none option was passed.
+
+
+Starting migrations...
+======================
+> Network name:    'worldland_gwangju'
+> Network id:      10395
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_deploy.js
+===========
+
+   Deploying 'WETH9'
+   -----------------
+   > transaction hash:    0x01f2c23e1d7c4342e00e21f0e6b77015d604df7f9e51c82e445715dbdcdd1dec
+   > Blocks: 1            Seconds: 12
+   > contract address:    0x4Ac3Af7621e5e244577343C0fDc94ca81eC8109E
+   > block number:        437329
+   > block timestamp:     1695602584
+   > account:             0x2Bb024a4e7b5453D9E40A439ACf411204413A3ac
+   > balance:             9999.998679187496301725
+   > gas used:            528325 (0x80fc5)
+   > gas price:           2.500000007 gwei
+   > value sent:          0 ETH
+   > total cost:          0.001320812503698275 ETH
+
+
+   Deploying 'UniswapV2Factory'
+   ----------------------------
+   > transaction hash:    0xaa93eb45d05aa1917765d087bdbdf4d3dd61c7b771cc394df00d134d43fc7acd
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x511DB00D13Cb58B07213Fc640F1Da20E0da0765C
+   > block number:        437330
+   > block timestamp:     1695602598
+   > account:             0x2Bb024a4e7b5453D9E40A439ACf411204413A3ac
+   > balance:             9999.986675332462690931
+   > gas used:            4801542 (0x494406)
+   > gas price:           2.500000007 gwei
+   > value sent:          0 ETH
+   > total cost:          0.012003855033610794 ETH
+
+
+   Deploying 'UniswapV2Router02'
+   -----------------------------
+   > transaction hash:    0xb7f248dd3a649aa0fda402fba5f980be57d7ccc5fbc875e2fd00909935b92f44
+   > Blocks: 0            Seconds: 36
+   > contract address:    0xbB66cFAC2Fc7156F051785f3d4C1DA142A9C3b09
+   > block number:        437331
+   > block timestamp:     1695602602
+   > account:             0x2Bb024a4e7b5453D9E40A439ACf411204413A3ac
+   > balance:             9999.975741282432075591
+   > gas used:            4373620 (0x42bc74)
+   > gas price:           2.500000007 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01093405003061534 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.024258717567924409 ETH
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.024258717567924409 ETH
